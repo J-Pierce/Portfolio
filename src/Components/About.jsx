@@ -1,11 +1,12 @@
 import profile from "../assets/Me.png";
+import placeholder from "../assets/placeholder.png";
 
 export default function About() {
   return (
     <section className="about">
       <h2>About</h2>
       <section className="row">
-        <img src={profile} alt="placeholder image" id="profileImage" />
+        <img src={placeholder} alt="placeholder image" id="profileImage" />
         <section className="profileText">
           <section className="name">
             <p id="name">James Pierce</p>
