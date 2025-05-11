@@ -1,0 +1,36 @@
+header {
+  background-color: rgb(238, 238, 238);
+  border: solid black;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+header .headerClicked {
+  background-color: rgb(175, 175, 175);
+}
+header .headerUnclicked {
+  background-color: rgb(236, 214, 214);
+}
+
+main {
+  max-width: 15in;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+main #About img {
+  border: solid black;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+main #Projects img {
+  border: solid black;
+  width: 30%;
+  margin: 10px;
+}
