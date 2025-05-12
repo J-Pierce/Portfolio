@@ -35,3 +35,14 @@
 .about #statement {
   padding: 10px;
 }
+
+.about .connect {
+  margin-left: 80px;
+  padding-top: 40px;
+}
+
+.about .connect #title {
+  font-size: 20px;
+  border-bottom: solid black;
+  padding-bottom: 20px;
+}

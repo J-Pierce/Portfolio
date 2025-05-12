@@ -1,12 +1,11 @@
-import profile from "../assets/Me.png";
-import placeholder from "../assets/placeholder.png";
+import profile from "../assets/profile.png";
 
 export default function About() {
   return (
     <section className="about">
       <h2>About</h2>
       <section className="row">
-        <img src={placeholder} alt="placeholder image" id="profileImage" />
+        <img src={profile} alt="placeholder image" id="profileImage" />
         <section className="profileText">
           <section className="name">
             <p id="name">James Pierce</p>
@@ -14,9 +13,20 @@ export default function About() {
           </section>
           <p id="role">Junior Software Developer</p>
           <p id="location">Essex, United Kingdom</p>
-          <a href="mailto:contact@jamespierce.co.uk">
-            contact@jamespierce.co.uk
-          </a>
+        </section>
+        <section className="connect">
+          <p id="title">Connect with me</p>
+          <p>
+            <a href="mailto:contact@jamespierce.co.uk">
+              contact@jamespierce.co.uk
+            </a>
+          </p>
+          <p>
+            <a href="contact@jamespierce.co.uk">LinkedIn</a>
+          </p>
+          <p>
+            <a href="contact@jamespierce.co.uk">Github</a>
+          </p>
         </section>
       </section>
       <p id="statement">
