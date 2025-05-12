@@ -1,3 +1,9 @@
+.education {
+  max-width: 15in;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .education .qualification {
   margin-bottom: 30px;
   padding-left: 50px;

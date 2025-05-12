@@ -1,3 +1,9 @@
+.experience {
+  max-width: 15in;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .experience .job {
   margin-bottom: 30px;
   padding-left: 50px;

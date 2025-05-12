@@ -1,3 +1,9 @@
+.extra {
+  max-width: 15in;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .extra .hobby {
   margin-bottom: 30px;
   padding-left: 50px;

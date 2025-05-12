@@ -6,8 +6,5 @@
 @import "./Extra.css";
 
 main {
-  max-width: 15in;
-  margin-left: auto;
-  margin-right: auto;
   color: black;
 }

@@ -1,48 +1,76 @@
-.about .row {
-  margin-left: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+.about {
+  background-color: #ecfffa;
 }
 
-.about #profileImage {
-  border: solid black;
-  border-radius: 50%;
-  margin: 10px;
+.about .grid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  justify-content: space-evenly;
+  max-width: 15in;
+}
+
+.about img {
+  width: 100%;
   clip-path: circle();
-  width: 300px;
-  height: 300px;
+  margin: 10px;
 }
 
-.about .profileText {
-  margin-left: 50px;
+.about .text {
+  padding-left: 60px;
 }
-.about .name {
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-  font-weight: bold;
+.about .text #name {
+  font-size: 50px;
+  height: 10px;
+}
+
+.about .text #role {
+  font-size: 30px;
+  color: rgb(75, 74, 74);
+}
+.about .text #statement {
   font-size: 20px;
-  border-bottom: solid black;
-}
-
-.about .name #pronouns {
-  padding-left: 10px;
-  color: grey;
-}
-
-.about #statement {
-  padding: 10px;
 }
 
 .about .connect {
-  margin-left: 80px;
-  padding-top: 40px;
+  color: rgb(0, 0, 0);
+}
+.about .connect #title {
+  font-size: 30px;
+  height: 20px;
+  padding: 10px;
 }
 
-.about .connect #title {
+.about .connect .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 50px;
+  padding-right: 50px;
+  list-style: none;
+}
+.about .connect li {
   font-size: 20px;
-  border-bottom: solid black;
-  padding-bottom: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.about .connect .links a {
+  color: rgb(0, 0, 0);
+  align-items: center;
+}
+
+.about .connect .links a .link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .connect .links a .link p{
+  padding-top: 3px;
+  padding-left: 4px;
 }
