@@ -6,9 +6,11 @@ export default function Project() {
   return (
     <section className="project">
       <header>
-        <Link to="/" className="button">
-          Home
-        </Link>
+        <ul>
+          <Link to="/" className="button">
+            Home
+          </Link>
+        </ul>
       </header>
       <main>
         <p>{project}</p>
