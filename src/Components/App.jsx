@@ -1,12 +1,11 @@
 import "../Css/App.css";
-import About from "./About";
-import Contact from "./Contact";
-import Education from "./Education";
-import Footer from "./Footer";
 import Header from "./Header";
+import About from "./About";
 import Projects from "./Projects";
-import Skills from "./Skills";
-import Work from "./Work";
+import Education from "./Education";
+import Experience from "./Experience";
+import Extra from "./Extra";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -16,9 +15,8 @@ function App() {
         <About />
         <Projects />
         <Education />
-        <Work />
-        <Skills />
-        <Contact />
+        <Experience />
+        <Extra />
       </main>
       <Footer />
     </>
