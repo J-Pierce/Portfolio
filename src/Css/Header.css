@@ -34,7 +34,6 @@
   top: 0;
   z-index: 1;
 }
-
 .project header ul {
   display: flex;
   flex-direction: row;
@@ -46,7 +45,6 @@
 }
 
 .project header .button {
-  margin-left: 80px;
   padding: 20px;
   font-size: 25px;
 }
