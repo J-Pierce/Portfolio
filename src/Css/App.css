@@ -1,93 +1,14 @@
-header {
-  background-color: rgb(238, 238, 238);
-  border: solid black;
-}
-header ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style-type: none;
-}
-
-header .headerClicked {
-  background-color: rgb(175, 175, 175);
-}
-header .headerUnclicked {
-  background-color: rgb(236, 214, 214);
-}
+@import "./Header.css";
+@import "./About.css";
+@import "./Projects.css";
+@import "./Education.css";
+@import "./Experience.css";
+@import "./Extra.css";
+@import "./Footer.css";
 
 main {
   max-width: 15in;
   margin-left: auto;
   margin-right: auto;
   color: black;
-}
-
-main .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-main .profileText {
-  padding: 10px;
-  border: solid black;
-}
-
-main #profileImage {
-  border: solid black;
-  border-radius: 50%;
-  margin: 10px;
-  clip-path: circle();
-  width: 300px;
-  height: 300px;
-}
-
-.about .name {
-  display: flex;
-  flex-direction: row;
-}
-
-.about .name #pronouns {
-  padding-left: 10px;
-  color: grey;
-}
-
-main .projectsGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px 10px;
-  justify-content: center;
-  align-content: center;
-}
-
-main .project {
-  display: flex;
-  flex-direction: column;
-  border: solid black;
-  background-color: white;
-  height: 100%;
-}
-
-a,
-a:hover,
-a:focus,
-a:active {
-  color: #000000;
-  text-decoration: none;
-}
-
-main .project h3 {
-  text-align: center;
-  background-color: red;
-  margin: 0;
-  padding: 10px;
-  border-bottom: solid;
-}
-
-main .projects img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  object-fit: cover;
 }

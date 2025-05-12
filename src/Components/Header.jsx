@@ -2,14 +2,7 @@ import { useState } from "react";
 
 export default function Header() {
   const [isClicked, setIsClicked] = useState("");
-  const items = [
-    "About Me",
-    "Education",
-    "Work",
-    "Skills",
-    "Projects",
-    "Contact",
-  ];
+  const items = ["About Me", "Projects", "Education", "Experience", "Extra"];
 
   function handleSelect(event) {
     isClicked === event.target.id ? null : setIsClicked(event.target.id);
