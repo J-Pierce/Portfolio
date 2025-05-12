@@ -6,10 +6,10 @@ main .projectsGrid {
   align-content: center;
 }
 
-main .project {
+main .projectCard {
   display: flex;
   flex-direction: column;
-  border: solid black;
+  border: 3px solid rgb(126, 126, 126);
   background-color: white;
   height: 100%;
 }
@@ -22,12 +22,12 @@ a:active {
   text-decoration: none;
 }
 
-main .project h3 {
+main .projectCard h3 {
   text-align: center;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 10px;
-  border-bottom: solid;
+  border-bottom: 3px solid rgb(126, 126, 126);
 }
 
 main .projects img {

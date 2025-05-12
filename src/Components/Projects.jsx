@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 import NCnews from "../assets/NC-News.png";
 import Backend from "../assets/Backend.png";
@@ -8,23 +9,23 @@ export default function Projects() {
     <section className="projects">
       <h2>Projects</h2>
       <section className="projectsGrid">
-        <a href={"https://github.com/J-Pierce/NC-News-FE"}>
-          <section className="project">
+        <section className="projectCard">
+          <Link to="/NC_News_Frontend">
             <h3>NC News Frontend</h3>
             <img src={NCnews} alt="NC News Frontend project" />
-          </section>
-        </a>
-        <section className="project">
-          <a href={"https://github.com/J-Pierce/NC-News-BE"}>
+          </Link>
+        </section>
+        <section className="projectCard">
+          <Link to="/NC_News_Backend">
             <h3>NC News Backend</h3>
             <img src={Backend} alt="NC News Backend project" />
-          </a>
+          </Link>
         </section>
-        <section className="project">
-          <a href={"https://github.com/J-Pierce/Pokemon_Battler"}>
+        <section className="projectCard">
+          <Link to="/Pokemon_Battler">
             <h3>Pokemon Battler</h3>
-            <img src={pokemonBattler} alt="NC News project" />
-          </a>
+            <img src={pokemonBattler} alt="Pokemon Battler" />
+          </Link>
         </section>
       </section>
     </section>
