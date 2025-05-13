@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import LanguageIcon from "@mui/icons-material/Language";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-import NCnews from "../../assets/NC-News.png";
+import pokemonBattler from "../../assets/pokemonBattler.png";
 
 export default function PokemonBattler() {
   return (
@@ -17,9 +17,9 @@ export default function PokemonBattler() {
       <main>
         <section className="banner">
           <section className="grid">
-            <img src={NCnews} alt="Pokemon Battler project" />
+            <img src={pokemonBattler} alt="Pokemon Battler project" />
             <section className="text">
-              <p id="name">Pokemon Battler</p>
+              <p id="toBig">Pokemon Battler - Object Oriented Programming</p>
               <section className="line" />
               <section className="linksList">
                 <p>Links:</p>
@@ -55,13 +55,32 @@ export default function PokemonBattler() {
                   <li>
                     <p>cli-spinner</p>
                   </li>
+                  <li>
+                    <p>OOP</p>
+                  </li>
                 </ul>
               </section>
             </section>
           </section>
         </section>
         <section className="body">
-          <p>to-do</p>
+          <p>
+            This project is a command line game where the player can select 6
+            pokemon to battle against an opponent. Within a battle they can
+            choose what move to play and swap out pokemon.Once all of either
+            your or your opponent's pokemon have fainted the match is over.
+          </p>
+
+          <p>
+            This project was built using javascript, primary focusing on object
+            oriented programming, and using a collection of libraries for the
+            command line interaction and input.
+          </p>
+
+          <p>
+            To try it out, click on the github link and follow the install and
+            play instructions
+          </p>
         </section>
       </main>
     </section>

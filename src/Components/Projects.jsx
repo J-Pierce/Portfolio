@@ -4,6 +4,7 @@ import placeholder from "../assets/imagePlaceholder.png";
 import NCnews from "../assets/NC-News.png";
 import Backend from "../assets/Backend.png";
 import pokemonBattler from "../assets/pokemonBattler.png";
+import report from "../assets/reportScreenshot.png";
 
 export default function Projects() {
   return (
@@ -40,19 +41,19 @@ export default function Projects() {
             </Link>
           </section> */}
 
-          {/* <section className="projectCard">
+          <section className="projectCard">
             <Link to="/Pokemon_Battler">
               <h3>Pokemon Battler</h3>
               <img src={pokemonBattler} alt="Pokemon Battler" />
             </Link>
-          </section> */}
+          </section>
 
-          {/* <section className="projectCard">
+          <section className="projectCard">
             <Link to="/TEM_Simulations">
               <h3>TEM Simulations</h3>
-              <img src={placeholder} alt="" />
+              <img src={report} alt="" />
             </Link>
-          </section> */}
+          </section>
 
           {/* <section className="projectCard">
             <Link to="/Modelling_Josephson_Photonics_Junction">
