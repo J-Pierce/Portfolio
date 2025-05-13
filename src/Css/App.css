@@ -4,6 +4,7 @@
 @import "./Education.css";
 @import "./Experience.css";
 @import "./Extra.css";
+@import "./Project.css";
 
 main {
   color: black;
