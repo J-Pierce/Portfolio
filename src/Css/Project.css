@@ -61,6 +61,10 @@
   height: 10px;
 }
 
+.project .text #toBig {
+  font-size: 50px;
+  height: 100px;
+}
 .project .line {
   border-bottom: solid rgb(75, 74, 74);
   margin-top: 20px;
@@ -120,4 +124,9 @@
 
 .project .body {
   font-size: 25px;
+}
+
+.project .body img {
+  margin-left: auto;
+  margin-right: auto;
 }
