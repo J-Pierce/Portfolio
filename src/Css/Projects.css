@@ -4,19 +4,18 @@
 }
 
 .projects .grid {
-  max-width: 15in;
   margin-left: auto;
   margin-right: auto;
 }
 
 .projects h2 {
-  font-size: 40px;
+  font-size: 30px;
   padding-top: 50px;
 }
 
 .projects .projectsGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10px 10px;
   justify-content: center;
   align-content: center;
@@ -52,4 +51,72 @@ a:active {
   margin-right: auto;
   width: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 500px) {
+  .projects .projectsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects {
+    padding-bottom: 50px;
+    background-color: white;
+  }
+
+  .projects .grid {
+    max-width: 15in;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projects h2 {
+    font-size: 40px;
+    padding-top: 50px;
+  }
+
+  .projects .projectsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .projects .projectCard {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(126, 126, 126);
+    background-color: white;
+    height: 100%;
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .projects .projectCard h3 {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 10px;
+    border-bottom: 3px solid rgb(126, 126, 126);
+    font-size: 20px;
+  }
+
+  .projects img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: cover;
+  }
 }

@@ -1,66 +1,64 @@
 .about {
   background-color: #ecfffa;
 }
+.about .sizing {
+  max-width: 15in;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .about .grid {
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  justify-content: space-evenly;
-  max-width: 15in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about img {
-  width: 100%;
+  width: 80%;
+  max-width: 400px;
   clip-path: circle();
-  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .about .text {
-  padding-left: 60px;
+  padding: 10px;
 }
 .about .text #name {
-  font-size: 50px;
+  font-size: 25px;
   height: 10px;
 }
 
 .about .text #role {
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(75, 74, 74);
 }
 .about .text #statement {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .about .connect {
   color: rgb(0, 0, 0);
 }
 .about .connect #title {
-  font-size: 30px;
+  font-size: 20px;
   height: 20px;
   padding: 10px;
 }
 
 .about .connect .links {
+  padding: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: baseline;
-  padding-left: 50px;
-  padding-right: 50px;
   list-style: none;
 }
 .about .connect li {
   font-size: 20px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.about .connect .links a {
-  color: rgb(0, 0, 0);
-  align-items: center;
 }
 
 .about .connect .links a .link {
@@ -70,7 +68,97 @@
   align-items: center;
 }
 
-.about .connect .links a .link p{
+.about .connect .links a .link p {
   padding-top: 3px;
   padding-left: 4px;
+}
+
+@media (min-width: 1000px) {
+  .about {
+    background-color: #ecfffa;
+  }
+  .about .sizing {
+    max-width: 15in;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about .grid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    justify-content: space-evenly;
+    max-width: 15in;
+  }
+
+  .about img {
+    width: 100%;
+    max-width: 15000px;
+    clip-path: circle();
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .about .text {
+    padding-left: 60px;
+    padding-right: 10px;
+  }
+  .about .text #name {
+    font-size: 50px;
+    height: 10px;
+  }
+
+  .about .text #role {
+    font-size: 30px;
+    color: rgb(75, 74, 74);
+  }
+  .about .text #statement {
+    font-size: 20px;
+  }
+
+  .about .connect {
+    color: rgb(0, 0, 0);
+  }
+  .about .connect #title {
+    font-size: 30px;
+    height: 20px;
+    padding: 10px;
+  }
+
+  .about .connect .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 50px;
+    padding-right: 50px;
+    list-style: none;
+  }
+  .about .connect li {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .about .connect .links a {
+    color: rgb(0, 0, 0);
+    align-items: center;
+  }
+
+  .about .connect .links a .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about .connect .links a .link p {
+    padding-top: 3px;
+    padding-left: 4px;
+  }
 }
