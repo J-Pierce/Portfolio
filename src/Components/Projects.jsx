@@ -12,12 +12,12 @@ export default function Projects() {
         <h2>Projects</h2>
 
         <section className="projectsGrid">
-          <section className="projectCard">
+          {/* <section className="projectCard">
             <Link to="/Knowva_Mobile_App">
               <h3>Knowva Mobile App</h3>
               <img src={placeholder} alt="" />
             </Link>
-          </section>
+          </section> */}
 
           <section className="projectCard">
             <Link to="/NC_News_Frontend">
@@ -33,33 +33,33 @@ export default function Projects() {
             </Link>
           </section>
 
-          <section className="projectCard">
+          {/* <section className="projectCard">
             <Link to="/Maze_Solving_Algorithm_Implementation">
               <h3>Maze Solving Algorithm Implementation</h3>
               <img src={placeholder} alt="" />
             </Link>
-          </section>
+          </section> */}
 
-          <section className="projectCard">
+          {/* <section className="projectCard">
             <Link to="/Pokemon_Battler">
               <h3>Pokemon Battler</h3>
               <img src={pokemonBattler} alt="Pokemon Battler" />
             </Link>
-          </section>
+          </section> */}
 
-          <section className="projectCard">
+          {/* <section className="projectCard">
             <Link to="/TEM_Simulations">
               <h3>TEM Simulations</h3>
               <img src={placeholder} alt="" />
             </Link>
-          </section>
+          </section> */}
 
-          <section className="projectCard">
+          {/* <section className="projectCard">
             <Link to="/Modelling_Josephson_Photonics_Junction">
               <h3>Modelling Josephson Photonics Junction</h3>
               <img src={placeholder} alt="" />
             </Link>
-          </section>
+          </section> */}
         </section>
       </section>
     </section>
