@@ -1,16 +1,43 @@
 .education {
+  background-color: white;
+  padding-bottom: 50px;
+}
+.education .qualifications {
   max-width: 15in;
   margin-left: auto;
   margin-right: auto;
 }
+.education h2 {
+  font-size: 40px;
+  padding-top: 50px;
+}
 
+.education .line {
+  border-bottom: solid rgb(75, 74, 74);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .education .qualification {
-  margin-bottom: 30px;
-  padding-left: 50px;
-  border: solid rgb(228, 228, 228);
-  background-color: rgb(245, 245, 245);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 15in;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 0.2fr 1.1fr;
+  justify-content: space-evenly;
+  font-size: 20px;
 }
 
 .education .qualification #title {
-  text-decoration: underline;
+  font-size: 30px;
+  margin-top: 12px;
+  height: 10px;
+}
+
+.education .qualification #location {
+  font-size: 25px;
+}
+
+.education .qualification #Classification {
+  font-size: 20px;
 }

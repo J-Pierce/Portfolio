@@ -9,29 +9,73 @@ import Experience from "./Experience";
 import Extra from "./Extra";
 
 function Home() {
-  const items = ["About Me", "Projects", "Experience", "Education", "Extra"];
-
   return (
     <section className="home">
       <header>
         <nav>
           <ul>
-            {items.map((item) => {
-              return (
-                <li key={item}>
-                  <Link
-                    className="button"
-                    spy={true}
-                    to={item}
-                    smooth={true}
-                    offset={-110}
-                    duration={500}
-                  >
-                    {item}
-                  </Link>
-                </li>
-              );
-            })}
+            <li key={"About Me"}>
+              <Link
+                className="button"
+                spy={true}
+                to={"About Me"}
+                smooth={true}
+                offset={-110}
+                duration={500}
+              >
+                {"About Me"}
+              </Link>
+            </li>
+
+            <li key={"Projects"}>
+              <Link
+                className="button"
+                spy={true}
+                to={"Projects"}
+                smooth={true}
+                offset={-110}
+                duration={500}
+              >
+                {"Projects"}
+              </Link>
+            </li>
+
+            <li key={"Experience"}>
+              <Link
+                className="button"
+                spy={true}
+                to={"Experience"}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                {"Experience"}
+              </Link>
+            </li>
+            <li key={"Education"}>
+              <Link
+                className="button"
+                spy={true}
+                to={"Education"}
+                smooth={true}
+                offset={-110}
+                duration={500}
+              >
+                {"Education"}
+              </Link>
+            </li>
+            <li key={"Extra"}>
+              <Link
+                className="button"
+                spy={true}
+                to={"Extra"}
+                smooth={true}
+                offset={-110}
+                duration={500}
+              >
+                {"Extra"}
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

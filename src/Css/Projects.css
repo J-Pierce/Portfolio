@@ -1,7 +1,17 @@
 .projects {
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+.projects .grid {
   max-width: 15in;
   margin-left: auto;
   margin-right: auto;
+}
+
+.projects h2 {
+  font-size: 40px;
+  padding-top: 50px;
 }
 
 .projects .projectsGrid {
