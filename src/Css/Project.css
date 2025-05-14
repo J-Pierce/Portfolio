@@ -11,7 +11,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
-  max-width: 15in;
   margin-left: auto;
   margin-right: auto;
 }
@@ -28,10 +27,8 @@
 }
 
 .project .body {
-  max-width: 15in;
   margin-left: auto;
   margin-right: auto;
-  font-size: 20px;
 }
 .project .banner {
   background-color: #ecfffa;
@@ -43,31 +40,28 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 20px;
-  justify-content: space-evenly;
-  max-width: 15in;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .project .banner img {
   width: 100%;
 }
 
 .project .text {
-  padding-left: 60px;
+  padding-left: 10px;
 }
 .project .text #name {
-  font-size: 50px;
+  font-size: 30px;
   height: 10px;
 }
 
 .project .text #toBig {
-  font-size: 50px;
-  height: 100px;
+  font-size: 30px;
+  height: 60px;
 }
 .project .line {
   border-bottom: solid rgb(75, 74, 74);
-  margin-top: 20px;
 }
 
 .project .banner .linksList {
@@ -75,25 +69,21 @@
   grid-template-columns: 0.2fr 1.1fr;
   justify-content: space-between;
   align-items: baseline;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .project .banner .links {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: baseline;
-  padding-left: 50px;
-  padding-right: 50px;
   list-style: none;
 }
 .project .banner li {
-  font-size: 30px;
+  font-size: 16px;
 }
 
 .project .banner .links a {
   color: rgb(0, 0, 0);
-  align-items: center;
 }
 
 .project .banner .links a .link {
@@ -104,29 +94,176 @@
 }
 
 .project .banner .links a .link p {
+  padding-top: 8px;
   padding-left: 4px;
 }
 
 .project .banner .technicalSkills #title {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .project .banner .technicalSkills ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: baseline;
 }
 
 .project .banner .technicalSkills ul li {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .project .body {
-  font-size: 25px;
+  font-size: 16px;
 }
 
 .project .body img {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+}
+
+@media (min-width: 450px) {
+  .project .banner img {
+    display: block;
+    margin: auto;
+    width: 450px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .project header {
+    background-color: #006b50;
+    border: solid #006b50;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+  }
+  .project header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    max-width: 15in;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project header .button {
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+  }
+
+  .project header .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .project .body {
+    max-width: 15in;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+  .project .banner {
+    background-color: #ecfffa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .project .banner .grid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 20px;
+    justify-content: space-evenly;
+    max-width: 15in;
+  }
+  .project .banner img {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  .project .text {
+    padding-left: 60px;
+  }
+  .project .text #name {
+    font-size: 50px;
+    height: 10px;
+  }
+
+  .project .text #toBig {
+    font-size: 50px;
+    height: 100px;
+  }
+  .project .line {
+    border-bottom: solid rgb(75, 74, 74);
+    margin-top: 20px;
+  }
+
+  .project .banner .linksList {
+    display: grid;
+    grid-template-columns: 0.2fr 1.1fr;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 30px;
+  }
+
+  .project .banner .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-left: 50px;
+    padding-right: 50px;
+    list-style: none;
+  }
+  .project .banner li {
+    font-size: 30px;
+  }
+
+  .project .banner .links a {
+    color: rgb(0, 0, 0);
+    align-items: center;
+  }
+
+  .project .banner .links a .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project .banner .links a .link p {
+    padding-left: 4px;
+  }
+
+  .project .banner .technicalSkills #title {
+    font-size: 30px;
+  }
+
+  .project .banner .technicalSkills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .project .banner .technicalSkills ul li {
+    font-size: 20px;
+  }
+
+  .project .body {
+    font-size: 25px;
+  }
+
+  .project .body img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

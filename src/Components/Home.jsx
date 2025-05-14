@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Link, Element } from "react-scroll";
+import { HashLink } from "react-router-hash-link";
+
 import "../Css/App.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import windowDimensions from "./WindowDimensions";
@@ -11,71 +12,67 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Extra from "./Extra";
 
+const scrollWithOffset = (el, offset) =>
+  window.scrollTo({
+    top: el.getBoundingClientRect().top + window.pageYOffset + offset,
+    behavior: "smooth",
+  });
+
 function LargeNavBar() {
   return (
     <section className="large">
       <ul>
         <li key={"About Me"}>
-          <Link
+          <HashLink
+            smooth
+            to="/#About"
+            scroll={(el) => scrollWithOffset(el, -70)}
             className="button"
-            spy={true}
-            to={"About Me"}
-            smooth={true}
-            offset={-110}
-            duration={500}
           >
-            {"About Me"}
-          </Link>
+            About
+          </HashLink>
         </li>
 
         <li key={"Projects"}>
-          <Link
+          <HashLink
+            smooth
+            to="/#Projects"
+            scroll={(el) => scrollWithOffset(el, -70)}
             className="button"
-            spy={true}
-            to={"Projects"}
-            smooth={true}
-            offset={-110}
-            duration={500}
           >
-            {"Projects"}
-          </Link>
+            Projects
+          </HashLink>
         </li>
 
         <li key={"Experience"}>
-          <Link
+          <HashLink
+            smooth
+            to="/#Experience"
+            scroll={(el) => scrollWithOffset(el, -70)}
             className="button"
-            spy={true}
-            to={"Experience"}
-            smooth={true}
-            offset={-70}
-            duration={500}
           >
-            {"Experience"}
-          </Link>
+            Experience
+          </HashLink>
         </li>
         <li key={"Education"}>
-          <Link
+          <HashLink
+            smooth
+            to="/#Education"
+            scroll={(el) => scrollWithOffset(el, -70)}
             className="button"
-            spy={true}
-            to={"Education"}
-            smooth={true}
-            offset={-110}
-            duration={500}
           >
-            {"Education"}
-          </Link>
+            Education
+          </HashLink>
         </li>
         <li key={"Extra"}>
-          <Link
+          <HashLink
+            smooth
+            to="/#Extra"
+            scroll={(el) => scrollWithOffset(el, -70)}
             className="button"
-            spy={true}
-            to={"Extra"}
-            smooth={true}
-            offset={-110}
-            duration={500}
           >
-            {"Extra"}
-          </Link>
+            Extra
+          </HashLink>
         </li>
       </ul>
     </section>
@@ -89,91 +86,81 @@ function SmallNavBar() {
     setIsVisible(!isVisible);
   };
 
-  function Dropdown(props) {
-    return (
-      <div className="large">
-        {props.isVisible ? (
-          <ul>
-            <li key={"About Me"}>
-              <Link
-                className="button"
-                spy={true}
-                to={"About Me"}
-                smooth={true}
-                offset={-300}
-                duration={500}
-                onClick={toggleVisibility}
-              >
-                {"About Me"}
-              </Link>
-            </li>
-
-            <li key={"Projects"}>
-              <Link
-                className="button"
-                spy={true}
-                to={"Projects"}
-                smooth={true}
-                offset={-300}
-                duration={500}
-                onClick={toggleVisibility}
-              >
-                {"Projects"}
-              </Link>
-            </li>
-
-            <li key={"Experience"}>
-              <Link
-                className="button"
-                spy={true}
-                to={"Experience"}
-                smooth={true}
-                offset={-270}
-                duration={500}
-                onClick={toggleVisibility}
-              >
-                {"Experience"}
-              </Link>
-            </li>
-            <li key={"Education"}>
-              <Link
-                className="button"
-                spy={true}
-                to={"Education"}
-                smooth={true}
-                offset={-300}
-                duration={500}
-                onClick={toggleVisibility}
-              >
-                {"Education"}
-              </Link>
-            </li>
-            <li key={"Extra"}>
-              <Link
-                className="button"
-                spy={true}
-                to={"Extra"}
-                smooth={true}
-                offset={-270}
-                duration={500}
-                onClick={toggleVisibility}
-              >
-                {"Extra"}
-              </Link>
-            </li>
-          </ul>
-        ) : null}
-      </div>
-    );
-  }
-
   return (
     <section className="small">
       <section className="button">
         <MenuIcon fontSize="inherit" onClick={toggleVisibility} />
       </section>
-      <Dropdown isVisible={isVisible} />
+      <Dropdown isVisible={isVisible} toggleVisibility={toggleVisibility} />
     </section>
+  );
+}
+
+function Dropdown(props) {
+  return (
+    <div className="large">
+      {props.isVisible ? (
+        <ul>
+          <li key={"About Me"}>
+            <HashLink
+              smooth
+              to="/#About"
+              onClick={props.toggleVisibility}
+              scroll={(el) => scrollWithOffset(el, -100)}
+              className="button"
+            >
+              About
+            </HashLink>
+          </li>
+
+          <li key={"Projects"}>
+            <HashLink
+              smooth
+              to="/#Projects"
+              onClick={props.toggleVisibility}
+              scroll={(el) => scrollWithOffset(el, -70)}
+              className="button"
+            >
+              Projects
+            </HashLink>
+          </li>
+
+          <li key={"Experience"}>
+            <HashLink
+              smooth
+              to="/#Experience"
+              onClick={props.toggleVisibility}
+              scroll={(el) => scrollWithOffset(el, -70)}
+              className="button"
+            >
+              Experience
+            </HashLink>
+          </li>
+          <li key={"Education"}>
+            <HashLink
+              smooth
+              to="/#Education"
+              onClick={props.toggleVisibility}
+              scroll={(el) => scrollWithOffset(el, -70)}
+              className="button"
+            >
+              Education
+            </HashLink>
+          </li>
+          <li key={"Extra"}>
+            <HashLink
+              smooth
+              to="/#Extra"
+              onClick={props.toggleVisibility}
+              scroll={(el) => scrollWithOffset(el, -70)}
+              className="button"
+            >
+              Extra
+            </HashLink>
+          </li>
+        </ul>
+      ) : null}
+    </div>
   );
 }
 
@@ -196,21 +183,21 @@ export default function Home() {
         <NavBar />
       </header>
       <main>
-        <Element name="About Me">
+        <section id="About">
           <About />
-        </Element>
-        <Element name="Projects">
+        </section>
+        <section id="Projects">
           <Projects />
-        </Element>
-        <Element name="Experience">
+        </section>
+        <section id="Experience">
           <Experience />
-        </Element>
-        <Element name="Education">
+        </section>
+        <section id="Education">
           <Education />
-        </Element>
-        <Element name="Extra">
+        </section>
+        <section id="Extra">
           <Extra />
-        </Element>
+        </section>
       </main>
     </section>
   );

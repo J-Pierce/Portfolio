@@ -45,7 +45,7 @@
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (min-width: 765px) {
+@media (min-width: 860px) {
   .home header {
     background-color: #006b50;
     border: solid #006b50;
