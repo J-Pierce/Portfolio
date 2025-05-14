@@ -1,14 +1,14 @@
 import LanguageIcon from "@mui/icons-material/Language";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-import NCnews from "../../assets/NC-News.png";
+import KnowvaLogo from "../../assets/Knowva_Logo.png";
 
 export default function KnowvaMobileApp() {
   return (
     <section className="project">
       <section className="banner">
         <section className="grid">
-          <img src={NCnews} alt="Knowva Mobile App project" />
+          <img src={KnowvaLogo} alt="Knowva Mobile App project" />
           <section className="text">
             <p id="name">Knowva Mobile App</p>
             <section className="line" />
@@ -16,14 +16,21 @@ export default function KnowvaMobileApp() {
               <p>Links:</p>
               <ul className="links">
                 <li>
-                  <a href="https://knowvaapi.onrender.com/api">
+                  <a href="https://github.com/NC-Knowva/FE">
+                    <section className="link">
+                      <LanguageIcon /> <p>Frontend</p>
+                    </section>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/NC-Knowva/BE">
                     <section className="link">
                       <LanguageIcon /> <p>Backend</p>
                     </section>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/orgs/NC-Knowva/repositories">
+                  <a href="https://github.com/NC-Knowva">
                     <section className="link">
                       <GitHubIcon />
                       <p>Github</p>
@@ -36,16 +43,13 @@ export default function KnowvaMobileApp() {
               <p id="title">Technical Skills:</p>
               <ul>
                 <li>
-                  <p>HTML</p>
+                  <p>ReactNative</p>
                 </li>
                 <li>
-                  <p>CSS</p>
+                  <p>Expo</p>
                 </li>
                 <li>
-                  <p>React</p>
-                </li>
-                <li>
-                  <p>Netlify</p>
+                  <p>socket-io</p>
                 </li>
               </ul>
             </section>
@@ -53,7 +57,25 @@ export default function KnowvaMobileApp() {
         </section>
       </section>
       <section className="body">
-        <p>to DO</p>
+        <section>
+          <p>
+            A gamified study app that helps learners master difficult topics
+            through engaging quizzes, offering personalised study support, and
+            enabling community discussions to share insights and find answers
+            together.
+          </p>
+          <p>
+            This project was built using ReactNative, expo, and socket-io for
+            the frontend, along with Node.js, Express, and PostgreSQL for the
+            backend.
+          </p>
+          <p>A demo video of the app can be watched below:</p>
+        </section>
+        <iframe
+          width="600"
+          height="600"
+          src="https://www.youtube.com/embed/m6gyRqZrUw0"
+        ></iframe>
       </section>
     </section>
   );
