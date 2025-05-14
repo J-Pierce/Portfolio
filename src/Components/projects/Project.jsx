@@ -37,15 +37,13 @@ export default function Project() {
   return (
     <section className="project">
       <header>
-        <ul>
-          <HashLink
-            to="/#Projects"
-            scroll={(el) => scrollWithOffset(el, -70)}
-            className="button"
-          >
-            Home
-          </HashLink>
-        </ul>
+        <HashLink
+          to="/#Projects"
+          scroll={(el) => scrollWithOffset(el, -70)}
+          className="button"
+        >
+          Home
+        </HashLink>
       </header>
       <main>
         <Page project={project} />

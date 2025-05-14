@@ -5,8 +5,9 @@
   top: 0;
   z-index: 1;
   margin: 0px;
+  height: 70px;
 }
-.project header ul {
+.project header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -17,7 +18,7 @@
 
 .project header .button {
   padding: 20px;
-  font-size: 25px;
+  font-size: 30px;
   color: white;
 }
 
@@ -118,9 +119,11 @@
 }
 
 .project .body img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  max-width: 400px;
 }
 
 @media (min-width: 450px) {
@@ -263,7 +266,10 @@
   }
 
   .project .body img {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: 600px;
   }
 }

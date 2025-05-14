@@ -8,9 +8,12 @@ export default function ModellingJosephsonPhotonicsJunction() {
     <section className="project">
       <section className="banner">
         <section className="grid">
-          <img src={NCnews} alt="NC News Frontend project" />
+          <img
+            src={NCnews}
+            alt="Modelling Josephson Photonics Junction project"
+          />
           <section className="text">
-            <p id="name">Nc News Frontend</p>
+            <p id="toBig">Modelling Josephson Photonics Junction</p>
             <section className="line" />
             <section className="linksList">
               <p>Links:</p>
@@ -26,7 +29,7 @@ export default function ModellingJosephsonPhotonicsJunction() {
                   <a href="https://github.com/J-Pierce/NC-News-FE">
                     <section className="link">
                       <GitHubIcon />
-                      <p>Github</p>
+                      <p>GitHub</p>
                     </section>
                   </a>
                 </li>
@@ -36,16 +39,10 @@ export default function ModellingJosephsonPhotonicsJunction() {
               <p id="title">Technical Skills:</p>
               <ul>
                 <li>
-                  <p>HTML</p>
+                  <p>MATLAB</p>
                 </li>
                 <li>
-                  <p>CSS</p>
-                </li>
-                <li>
-                  <p>React</p>
-                </li>
-                <li>
-                  <p>Netlify</p>
+                  <p>Modelling</p>
                 </li>
               </ul>
             </section>

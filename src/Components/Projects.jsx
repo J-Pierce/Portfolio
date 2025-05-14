@@ -5,6 +5,7 @@ import NCnews from "../assets/NC-News.png";
 import Backend from "../assets/Backend.png";
 import pokemonBattler from "../assets/pokemonBattler.png";
 import report from "../assets/reportScreenshot.png";
+import KnowvaLogo from "../assets/Knowva_Logo.png";
 
 export default function Projects() {
   return (
@@ -13,12 +14,12 @@ export default function Projects() {
         <h2>Projects</h2>
 
         <section className="projectsGrid">
-          {/* <section className="projectCard">
+          <section className="projectCard">
             <HashLink to="/Knowva_Mobile_App#">
               <h3>Knowva Mobile App</h3>
-              <img src={placeholder} alt="" />
+              <img src={KnowvaLogo} alt="" />
             </HashLink>
-          </section> */}
+          </section>
 
           <section className="projectCard">
             <HashLink to="/NC_News_Frontend#">
