@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import KnowvaMobileApp from "./KnowvaMobileApp";
 import NcNewsFrontend from "./NcNewsFrontend";
@@ -8,9 +9,12 @@ import PokemonBattler from "./PokemonBattler";
 import TEMSimulations from "./TEMSimulations";
 import ModellingJosephsonPhotonicsJunction from "./ModellingJosephsonPhotonicsJunction";
 
-export default function Project() {
-  const { project } = useParams();
+const scrollWithOffset = (el, offset) =>
+  window.scrollTo({
+    top: el.getBoundingClientRect().top + window.pageYOffset + offset,
+  });
 
+function Page({ project }) {
   if (project === "Knowva_Mobile_App") {
     return <KnowvaMobileApp />;
   } else if (project === "NC_News_Frontend") {
@@ -26,4 +30,26 @@ export default function Project() {
   } else if (project === "Modelling_Josephson_Photonics_Junction") {
     return <ModellingJosephsonPhotonicsJunction />;
   }
+}
+
+export default function Project() {
+  const { project } = useParams();
+  return (
+    <section className="project">
+      <header>
+        <ul>
+          <HashLink
+            to="/#Projects"
+            scroll={(el) => scrollWithOffset(el, -70)}
+            className="button"
+          >
+            Home
+          </HashLink>
+        </ul>
+      </header>
+      <main>
+        <Page project={project} />
+      </main>
+    </section>
+  );
 }
