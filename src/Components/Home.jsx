@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
 import { Link, Element } from "react-scroll";
 import "../Css/App.css";
+import MenuIcon from "@mui/icons-material/Menu";
+import windowDimensions from "./WindowDimensions";
 
 import About from "./About";
 import Projects from "./Projects";
@@ -8,11 +11,88 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Extra from "./Extra";
 
-function Home() {
+function LargeNavBar() {
   return (
-    <section className="home">
-      <header>
-        <nav>
+    <section className="large">
+      <ul>
+        <li key={"About Me"}>
+          <Link
+            className="button"
+            spy={true}
+            to={"About Me"}
+            smooth={true}
+            offset={-110}
+            duration={500}
+          >
+            {"About Me"}
+          </Link>
+        </li>
+
+        <li key={"Projects"}>
+          <Link
+            className="button"
+            spy={true}
+            to={"Projects"}
+            smooth={true}
+            offset={-110}
+            duration={500}
+          >
+            {"Projects"}
+          </Link>
+        </li>
+
+        <li key={"Experience"}>
+          <Link
+            className="button"
+            spy={true}
+            to={"Experience"}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            {"Experience"}
+          </Link>
+        </li>
+        <li key={"Education"}>
+          <Link
+            className="button"
+            spy={true}
+            to={"Education"}
+            smooth={true}
+            offset={-110}
+            duration={500}
+          >
+            {"Education"}
+          </Link>
+        </li>
+        <li key={"Extra"}>
+          <Link
+            className="button"
+            spy={true}
+            to={"Extra"}
+            smooth={true}
+            offset={-110}
+            duration={500}
+          >
+            {"Extra"}
+          </Link>
+        </li>
+      </ul>
+    </section>
+  );
+}
+
+function SmallNavBar() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+
+  function Dropdown(props) {
+    return (
+      <div className="large">
+        {props.isVisible ? (
           <ul>
             <li key={"About Me"}>
               <Link
@@ -20,8 +100,9 @@ function Home() {
                 spy={true}
                 to={"About Me"}
                 smooth={true}
-                offset={-110}
+                offset={-300}
                 duration={500}
+                onClick={toggleVisibility}
               >
                 {"About Me"}
               </Link>
@@ -33,8 +114,9 @@ function Home() {
                 spy={true}
                 to={"Projects"}
                 smooth={true}
-                offset={-110}
+                offset={-300}
                 duration={500}
+                onClick={toggleVisibility}
               >
                 {"Projects"}
               </Link>
@@ -46,8 +128,9 @@ function Home() {
                 spy={true}
                 to={"Experience"}
                 smooth={true}
-                offset={-70}
+                offset={-270}
                 duration={500}
+                onClick={toggleVisibility}
               >
                 {"Experience"}
               </Link>
@@ -58,8 +141,9 @@ function Home() {
                 spy={true}
                 to={"Education"}
                 smooth={true}
-                offset={-110}
+                offset={-300}
                 duration={500}
+                onClick={toggleVisibility}
               >
                 {"Education"}
               </Link>
@@ -70,14 +154,46 @@ function Home() {
                 spy={true}
                 to={"Extra"}
                 smooth={true}
-                offset={-110}
+                offset={-270}
                 duration={500}
+                onClick={toggleVisibility}
               >
                 {"Extra"}
               </Link>
             </li>
           </ul>
-        </nav>
+        ) : null}
+      </div>
+    );
+  }
+
+  return (
+    <section className="small">
+      <section className="button">
+        <MenuIcon fontSize="inherit" onClick={toggleVisibility} />
+      </section>
+      <Dropdown isVisible={isVisible} />
+    </section>
+  );
+}
+
+function NavBar() {
+  const { width } = windowDimensions();
+
+  const ToRenderChild = width > 765 ? LargeNavBar : SmallNavBar;
+
+  return (
+    <nav>
+      <ToRenderChild />
+    </nav>
+  );
+}
+
+export default function Home() {
+  return (
+    <section className="home">
+      <header>
+        <NavBar />
       </header>
       <main>
         <Element name="About Me">
@@ -99,5 +215,3 @@ function Home() {
     </section>
   );
 }
-
-export default Home;
