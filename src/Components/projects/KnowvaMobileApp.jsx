@@ -1,9 +1,10 @@
 import LanguageIcon from "@mui/icons-material/Language";
 import GitHubIcon from "@mui/icons-material/GitHub";
-
+import windowDimensions from "../WindowDimensions";
 import KnowvaLogo from "../../assets/Knowva_Logo.png";
 
 export default function KnowvaMobileApp() {
+  const { width } = windowDimensions();
   return (
     <section className="project">
       <section className="banner">
@@ -72,7 +73,7 @@ export default function KnowvaMobileApp() {
           <p>A demo video of the app can be watched below:</p>
         </section>
         <iframe
-          width="600"
+          width={width < 600 ? width : 600}
           height="600"
           src="https://www.youtube.com/embed/m6gyRqZrUw0"
         ></iframe>
