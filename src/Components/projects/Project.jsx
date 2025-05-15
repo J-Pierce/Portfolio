@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import KnowvaMobileApp from "./KnowvaMobileApp";
 import NcNewsFrontend from "./NcNewsFrontend";
 import NcNewsBackend from "./NcNewsBackend";
-import MazeSolvingAlgorithmImplementation from "./MazeSolvingAlgorithmImplementation";
+import MazeSolvingAlgorithms from "./MazeSolvingAlgorithms";
 import PokemonBattler from "./PokemonBattler";
 import TEMSimulations from "./TEMSimulations";
 import ModellingJosephsonPhotonicsJunction from "./ModellingJosephsonPhotonicsJunction";
@@ -21,8 +21,8 @@ function Page({ project }) {
     return <NcNewsFrontend />;
   } else if (project === "NC_News_Backend") {
     return <NcNewsBackend />;
-  } else if (project === "Maze_Solving_Algorithm_Implementation") {
-    return <MazeSolvingAlgorithmImplementation />;
+  } else if (project === "Maze_Solving_Algorithms") {
+    return <MazeSolvingAlgorithms />;
   } else if (project === "Pokemon_Battler") {
     return <PokemonBattler />;
   } else if (project === "TEM_Simulations") {

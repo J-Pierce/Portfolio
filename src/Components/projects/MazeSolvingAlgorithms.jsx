@@ -3,7 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import windowDimensions from "../WindowDimensions";
 import MazeSolvingAlgorithm from "../../assets/maze solving algorithms.png";
 
-export default function MazeSolvingAlgorithmImplementation() {
+export default function MazeSolvingAlgorithms() {
   const { width } = windowDimensions();
   return (
     <section className="project">
