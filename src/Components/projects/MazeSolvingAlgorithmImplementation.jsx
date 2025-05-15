@@ -1,7 +1,7 @@
 import LanguageIcon from "@mui/icons-material/Language";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import windowDimensions from "../WindowDimensions";
-import NCnews from "../../assets/NC-News.png";
+import MazeSolvingAlgorithm from "../../assets/maze solving algorithms.png";
 
 export default function MazeSolvingAlgorithmImplementation() {
   const { width } = windowDimensions();
@@ -9,7 +9,7 @@ export default function MazeSolvingAlgorithmImplementation() {
     <section className="project">
       <section className="banner">
         <section className="grid">
-          <img src={NCnews} alt="Maze Solving Algorithms" />
+          <img src={MazeSolvingAlgorithm} alt="Maze Solving Algorithms" />
           <section className="text">
             <p id="name">Maze Solving Algorithms</p>
             <section className="line" />
@@ -17,14 +17,7 @@ export default function MazeSolvingAlgorithmImplementation() {
               <p>Links:</p>
               <ul className="links">
                 <li>
-                  <a href="https://nc-news-jpierce.netlify.app/">
-                    <section className="link">
-                      <LanguageIcon /> <p>Website</p>
-                    </section>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/J-Pierce/NC-News-FE">
+                  <a href="https://github.com/J-Pierce/Maze-Solving-Algorithms">
                     <section className="link">
                       <GitHubIcon />
                       <p>Github</p>
@@ -37,16 +30,10 @@ export default function MazeSolvingAlgorithmImplementation() {
               <p id="title">Technical Skills:</p>
               <ul>
                 <li>
-                  <p>HTML</p>
+                  <p>python</p>
                 </li>
                 <li>
-                  <p>CSS</p>
-                </li>
-                <li>
-                  <p>React</p>
-                </li>
-                <li>
-                  <p>Netlify</p>
+                  <p>algorithm implementation</p>
                 </li>
               </ul>
             </section>
@@ -84,12 +71,12 @@ export default function MazeSolvingAlgorithmImplementation() {
         ></iframe>
         <p>
           This demo was recorded running the code in a game called "The Farmer
-          Was Replaced" in which the player has write code for the drone to farm
+          Was Replaced" in which the player has write code for a drone to farm
           crops, each with their own mechanics to solve. Each algorithm was run
-          for 300 iterations in which when the endpoint is reached, the maze
-          regenerates with some maze walls being rearranged or removed. As such,
-          as the iterations increase, the maze will have more loops and open
-          areas which less sophisticated algoriths may struggle with.
+          for 300 iterations in which, when the endpoint is reached, some maze
+          walls are rearranged or removed. As such, as the iterations increase,
+          the maze will have more loops and open areas which less sophisticated
+          algoriths may struggle with.
         </p>
       </section>
     </section>

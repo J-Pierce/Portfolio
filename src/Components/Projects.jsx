@@ -6,6 +6,7 @@ import Backend from "../assets/Backend.png";
 import pokemonBattler from "../assets/pokemonBattler.png";
 import report from "../assets/reportScreenshot.png";
 import KnowvaLogo from "../assets/Knowva_Logo.png";
+import MazeSolvingAlgorithm from "../assets/maze solving algorithms.png";
 
 export default function Projects() {
   return (
@@ -17,7 +18,7 @@ export default function Projects() {
           <section className="projectCard">
             <HashLink to="/Maze_Solving_Algorithm_Implementation#">
               <h3>Maze Solving Algorithm Implementation</h3>
-              <img src={placeholder} alt="" />
+              <img src={MazeSolvingAlgorithm} alt="" />
             </HashLink>
           </section>
 
