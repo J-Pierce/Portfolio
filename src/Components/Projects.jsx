@@ -1,6 +1,6 @@
 import { HashLink } from "react-router-hash-link";
 
-import placeholder from "../assets/imagePlaceholder.png";
+// import placeholder from "../assets/imagePlaceholder.png";
 import NCnews from "../assets/NC-News.png";
 import Backend from "../assets/Backend.png";
 import pokemonBattler from "../assets/pokemonBattler.png";

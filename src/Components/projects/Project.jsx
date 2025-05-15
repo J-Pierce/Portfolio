@@ -8,6 +8,7 @@ import MazeSolvingAlgorithms from "./MazeSolvingAlgorithms";
 import PokemonBattler from "./PokemonBattler";
 import TEMSimulations from "./TEMSimulations";
 import ModellingJosephsonPhotonicsJunction from "./ModellingJosephsonPhotonicsJunction";
+import Home from "../Home";
 
 const scrollWithOffset = (el, offset) =>
   window.scrollTo({
@@ -29,11 +30,14 @@ function Page({ project }) {
     return <TEMSimulations />;
   } else if (project === "Modelling_Josephson_Photonics_Junction") {
     return <ModellingJosephsonPhotonicsJunction />;
+  } else {
+    return <Home />;
   }
 }
 
 export default function Project() {
   const { project } = useParams();
+  console.log(project);
   return (
     <section className="project">
       <header>
