@@ -6,6 +6,7 @@ import Backend from "../assets/Backend.png";
 import pokemonBattler from "../assets/pokemonBattler.png";
 import report from "../assets/reportScreenshot.png";
 import KnowvaLogo from "../assets/Knowva_Logo.png";
+import MazeSolvingAlgorithm from "../assets/maze solving algorithms.png";
 
 export default function Projects() {
   return (
@@ -14,6 +15,13 @@ export default function Projects() {
         <h2>Projects</h2>
 
         <section className="projectsGrid">
+          <section className="projectCard">
+            <HashLink to="/Maze_Solving_Algorithm_Implementation#">
+              <h3>Maze Solving Algorithm Implementation</h3>
+              <img src={MazeSolvingAlgorithm} alt="" />
+            </HashLink>
+          </section>
+
           <section className="projectCard">
             <HashLink to="/Knowva_Mobile_App#">
               <h3>Knowva Mobile App</h3>
@@ -34,13 +42,6 @@ export default function Projects() {
               <img src={Backend} alt="NC News Backend project" />
             </HashLink>
           </section>
-
-          {/* <section className="projectCard">
-            <HashLink to="/Maze_Solving_Algorithm_Implementation#">
-              <h3>Maze Solving Algorithm Implementation</h3>
-              <img src={placeholder} alt="" />
-            </HashLink>
-          </section> */}
 
           <section className="projectCard">
             <HashLink to="/Pokemon_Battler#">
