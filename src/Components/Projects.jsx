@@ -16,8 +16,8 @@ export default function Projects() {
 
         <section className="projectsGrid">
           <section className="projectCard">
-            <HashLink to="/Maze_Solving_Algorithm_Implementation#">
-              <h3>Maze Solving Algorithm Implementation</h3>
+            <HashLink to="/Maze_Solving_Algorithms">
+              <h3>Maze Solving Algorithms</h3>
               <img src={MazeSolvingAlgorithm} alt="" />
             </HashLink>
           </section>
