@@ -7,13 +7,13 @@ import Project from "./projects/Project";
 
 function App() {
   return (
-    <BrowserRouter>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:project" element={<Project />} />
         <Route path="/*" element={<Project />} />
       </Routes>
-    </BrowserRouter>
+
   );
 }
 
