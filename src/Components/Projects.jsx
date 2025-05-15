@@ -15,6 +15,13 @@ export default function Projects() {
 
         <section className="projectsGrid">
           <section className="projectCard">
+            <HashLink to="/Maze_Solving_Algorithm_Implementation#">
+              <h3>Maze Solving Algorithm Implementation</h3>
+              <img src={placeholder} alt="" />
+            </HashLink>
+          </section>
+
+          <section className="projectCard">
             <HashLink to="/Knowva_Mobile_App#">
               <h3>Knowva Mobile App</h3>
               <img src={KnowvaLogo} alt="" />
@@ -34,13 +41,6 @@ export default function Projects() {
               <img src={Backend} alt="NC News Backend project" />
             </HashLink>
           </section>
-
-          {/* <section className="projectCard">
-            <HashLink to="/Maze_Solving_Algorithm_Implementation#">
-              <h3>Maze Solving Algorithm Implementation</h3>
-              <img src={placeholder} alt="" />
-            </HashLink>
-          </section> */}
 
           <section className="projectCard">
             <HashLink to="/Pokemon_Battler#">

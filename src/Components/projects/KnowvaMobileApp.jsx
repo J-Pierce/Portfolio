@@ -75,7 +75,7 @@ export default function KnowvaMobileApp() {
         <iframe
           width={width < 600 ? width - 50 : 600}
           height="600"
-          src="https://www.youtube.com/embed/m6gyRqZrUw0"
+          src="https://www.youtube.com/embed/jrTe5_nb12E"
         ></iframe>
       </section>
     </section>
