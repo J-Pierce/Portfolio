@@ -58,7 +58,7 @@ export default function Experience() {
         <section className="line" />
 
         <section className="job">
-          <p id="date">March 2023 – September 2023</p>
+          <p id="date">March 2023 - September 2023</p>
           <section>
             <h3 className="title">
               Laser Manufacturing Engineer, M Squared Lasers
@@ -86,6 +86,60 @@ export default function Experience() {
             </ul>
           </section>
         </section>
+        
+        <section className="line" />
+
+        <section className="job">
+          <p id="date">Sep 2021 - September 2022</p>
+          <section>
+            <h3 className="title">
+              Natural Sciences Open Day Student Speaker
+            </h3>
+            <ul>
+              <li id="task">
+              Gave presentations at open days on my third-year project to prospective students, as well as talking to and answering question that any students or parents had.
+              </li>
+            </ul>
+          </section>
+        </section>
+        
+        <section className="line" />
+
+        <section className="job">
+          <p id="date">June 2020 - August 2022</p>
+          <section>
+            <h3 className="title">
+            Natural Sciences Digital Ambassador
+            </h3>
+            <ul>
+              <li id="task">
+                Created videos, gifs and posts for social media. Ran campaigns and marketing strategies to engage with prospective students.
+                I've learnt how to manage projects and deadlines while working with other people. I've also learnt how to creatively engage with people online.
+              </li>
+
+            </ul>
+          </section>
+        </section>
+        
+        <section className="line" />
+
+        <section className="job">
+          <p id="date">December 2020 - December 2020</p>
+          <section>
+            <h3 className="title">
+              Covid-19 Tester - University of Nottingham Mass Testing
+            </h3>
+            <ul>
+              <li id="task">
+                Worked closely with NHS professionals and trained in administering tests and maintaining quarantine regulations. I
+                was required to manage hazardous material while comforting and guiding people to obtain their samples.
+                This multitasking under a high pressure was very helpful in developing my social skills and customer service to
+                engage with people and make them feel relaxed
+              </li>
+            </ul>
+          </section>
+        </section>
+
       </section>
     </section>
   );
