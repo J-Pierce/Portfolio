@@ -167,7 +167,7 @@ function Dropdown(props) {
 function NavBar() {
   const { width } = windowDimensions();
 
-  const ToRenderChild = width > 765 ? LargeNavBar : SmallNavBar;
+  const ToRenderChild = width > 860 ? LargeNavBar : SmallNavBar;
 
   return (
     <nav>

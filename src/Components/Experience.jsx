@@ -67,60 +67,53 @@ export default function Experience() {
               <li id="task">
                 Built continuous-wave, ultra-narrow linewidth, widely tunable,
                 Ti:sapphire based lasers for use in research in industry and
-                academia, as well as other applications. I gained experience
-                working in a cleanroom with advanced lab equipment as w
+                academia, as well as other applications. I gained experience working in a cleanroom
+                with advanced lab equipment as well as being in a manufacturing
+                chain working in collaboration with multiple departments.
               </li>
               <li id="task">
                 Managed inventory for the production chain, flagging issue and
                 blockages of systems, contributed to component requisition and
                 quality checks
               </li>
-              <li id="task">
-                HTML, CSS, React, and others, used to build a frontend website
-                for the server
-              </li>
-              <li id="task">
-                Broad and detailed exposure to full stack development as well as
-                coding methodologies such as Agile and SCRUM
-              </li>
             </ul>
           </section>
         </section>
-        
+
         <section className="line" />
 
         <section className="job">
           <p id="date">Sep 2021 - September 2022</p>
           <section>
-            <h3 className="title">
-              Natural Sciences Open Day Student Speaker
-            </h3>
+            <h3 className="title">Natural Sciences Open Day Student Speaker</h3>
             <ul>
               <li id="task">
-              Gave presentations at open days on my third-year project to prospective students, as well as talking to and answering question that any students or parents had.
+                Gave presentations at open days on my third-year project to
+                prospective students, as well as talking to and answering
+                question that any students or parents had.
               </li>
             </ul>
           </section>
         </section>
-        
+
         <section className="line" />
 
         <section className="job">
           <p id="date">June 2020 - August 2022</p>
           <section>
-            <h3 className="title">
-            Natural Sciences Digital Ambassador
-            </h3>
+            <h3 className="title">Natural Sciences Digital Ambassador</h3>
             <ul>
               <li id="task">
-                Created videos, gifs and posts for social media. Ran campaigns and marketing strategies to engage with prospective students.
-                I've learnt how to manage projects and deadlines while working with other people. I've also learnt how to creatively engage with people online.
+                Created videos, gifs and posts for social media. Ran campaigns
+                and marketing strategies to engage with prospective students.
+                I've learnt how to manage projects and deadlines while working
+                with other people. I've also learnt how to creatively engage
+                with people online.
               </li>
-
             </ul>
           </section>
         </section>
-        
+
         <section className="line" />
 
         <section className="job">
@@ -131,15 +124,17 @@ export default function Experience() {
             </h3>
             <ul>
               <li id="task">
-                Worked closely with NHS professionals and trained in administering tests and maintaining quarantine regulations. I
-                was required to manage hazardous material while comforting and guiding people to obtain their samples.
-                This multitasking under a high pressure was very helpful in developing my social skills and customer service to
-                engage with people and make them feel relaxed
+                Worked closely with NHS professionals and trained in
+                administering tests and maintaining quarantine regulations. I
+                was required to manage hazardous material while comforting and
+                guiding people to obtain their samples. This multitasking under
+                a high pressure was very helpful in developing my social skills
+                and customer service to engage with people and make them feel
+                relaxed
               </li>
             </ul>
           </section>
         </section>
-
       </section>
     </section>
   );
